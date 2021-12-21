@@ -1,8 +1,8 @@
 m, n = int(input()), int(input())
-if m < n:
-    for i in range(m, n + 1):
+if m % 2 == 0:
+    for i in range(m - 1, n - 1, -2):
         print(i)
 else:
-    for j in range(m, n - 1, -1):
+    for j in range(m, n - 1, -2):
         print(j)
 
