@@ -1,12 +1,12 @@
-n = int(input())
+counter = 0
 counter1 = 0
-counter2 = 0
-for i in range(1, n + 1):
+for i in range(1, 11):
     n = int(input())
-    if n > counter1:
-        counter2 = counter1
+    if n % 2 == 0:
+        counter = n
+    else:
         counter1 = n
-    elif n < counter1 and n > counter2:
-        counter2 = n
-
-print(counter1, counter2, sep = '\n')
+if counter1 == 0:
+    print('YES')
+else:
+    print('NO')
