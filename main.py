@@ -1,7 +1,6 @@
-import math
 n = int(input())
-sum = 0
+total = 0
 for i in range(1, n + 1):
-    sum += 1 / (i)
-
-print((sum) - math.log(n))
+    if i ** 2 % 10 == 2 or i ** 2 % 10 == 5 or i ** 2 % 10 == 8:
+        total += i
+print(total)
