@@ -1,0 +1,17 @@
+h1 {
+    color: blue;
+    font-weight: 400;
+    font-size: 42px;
+}
+p {
+    color: #222;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+blockquote {
+    color: blue;
+    font-family: "cursive", sans-serif;
+    font-size: 24px;
+    line-height: 1.5;
+}
