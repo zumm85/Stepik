@@ -1,16 +1,18 @@
 a = int(input())
-count = 0
-last = a % 10
-first = 0
-composition = 1
-total = 0
+b = 0
+c = 0
+flag = True
 while a != 0:
-    if a != 0:
-        count += 1
-        composition *= a % 10
-    first = a % 10
-    total = first + total
+    b = a % 10
     a = a // 10
-first_last = first + last
-average = total / count
-print(total, count, composition, average, first, first_last, sep='\n')
+    c = a % 10
+    if c <= 0:
+        c = b
+#    print(b)
+#    print(c)
+    if b > c:
+        flag == False
+        print('NO')
+        break
+else:
+    print('YES')
